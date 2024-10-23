@@ -1,0 +1,128 @@
+Overview
+The Investment Portfolio Tracker is a web application designed to help users manage and visualize their investment portfolios. Users can add, update, and remove investments, while also viewing the overall performance and asset distribution through dynamic charts. This project utilizes HTML, CSS, and JavaScript, emphasizing intermediate JavaScript concepts such as DOM manipulation, event handling, and data visualization with Chart.js.
+This user story focuses on enabling users to add new investments to their portfolio within the Investment Portfolio Tracker application. By providing essential details such as asset name, investment amount, and current value, users can effectively track their investments.
+
+Acceptance Criteria
+Investment Form:
+
+A form should be present that includes:
+Input field for Asset Name (text).
+Input field for Investment Amount (number).
+Input field for Current Value (number).
+A Submit button.
+Investment List:
+
+Upon form submission, the new investment should be added to a displayed list of all investments.
+Each investment entry in the list should show:
+Asset Name
+Investment Amount
+Current Value
+Total Portfolio Value:
+
+The total portfolio value should be calculated automatically based on the investments added.
+Display the total portfolio value prominently on the dashboard.
+
+Implement the JavaScript to handle form submission, add investments to the list, and calculate the total portfolio value.
+Summary of Implementation
+Form Handling: The form captures user inputs and prevents page reload on submission.
+Investment Array: Investments are stored in an array to manage multiple entries.
+Dynamic List Update: The investment list is updated dynamically each time a new investment is added.
+Total Value Calculation: The total portfolio value is recalculated and displayed in real time.
+Testing
+Form Submission: Ensure that submitting the form adds the investment to the list and updates the total value.
+Input Validation: Test for valid inputs and prevent the addition of investments with missing or invalid data.
+UI Responsiveness: Confirm that the layout remains user-friendly across different devices.
+This implementation fulfills the requirements of User Story 1, allowing users to effectively add and track their investments within the application. If you need further enhancements or features, feel free to ask!
+
+<!-- Overview of the project -->
+
+Project Overview: Investment Portfolio Tracker
+The Investment Portfolio Tracker is a web application designed to help users manage and visualize their investment portfolios. Users can add, update, and remove investments, while also viewing the overall performance and asset distribution through dynamic charts. This project utilizes HTML, CSS, and JavaScript, emphasizing intermediate JavaScript concepts such as DOM manipulation, event handling, and data visualization with Chart.js.
+
+Key Components of the Project
+HTML Structure:
+
+Form Elements: Includes input fields for asset name, investment amount, and current value, along with a button to add investments.
+Investment List: Displays a list of current investments, showing details such as the asset name, invested amount, current value, and percentage change.
+Total Value Display: Shows the total value of the portfolio.
+Chart Container: A canvas element for rendering a pie chart representing the distribution of investments.
+CSS Styles:
+
+Responsive Design: Styles to ensure the application looks professional and is usable on various devices.
+Modern Aesthetics: Light color palette, spacing, and rounded elements to enhance user experience.
+Button Styles: Includes hover effects to provide feedback during user interactions.
+JavaScript Functionality:
+Investment Management:
+Adding Investments: Users can add investments through a form that updates the investment array and the total portfolio value.
+Updating Investments: Each investment can be updated through a prompt that allows users to enter a new current value.
+Removing Investments: Users can remove investments with a button that deletes the investment from the list and updates the total value.
+Dynamic Charting:
+Utilizes Chart.js to create a pie chart that dynamically reflects the asset distribution based on the current investments.
+Updates the chart when investments are added, updated, or removed.
+
+Key Components of the Project
+HTML Structure:
+
+Form Elements: Includes input fields for asset name, investment amount, and current value, along with a button to add investments.
+Investment List: Displays a list of current investments, showing details such as the asset name, invested amount, current value, and percentage change.
+Total Value Display: Shows the total value of the portfolio.
+Chart Container: A canvas element for rendering a pie chart representing the distribution of investments.
+CSS Styles:
+
+Responsive Design: Styles to ensure the application looks professional and is usable on various devices.
+Modern Aesthetics: Light color palette, spacing, and rounded elements to enhance user experience.
+Button Styles: Includes hover effects to provide feedback during user interactions.
+JavaScript Functionality:
+
+Investment Management:
+Adding Investments: Users can add investments through a form that updates the investment array and the total portfolio value.
+Updating Investments: Each investment can be updated through a prompt that allows users to enter a new current value.
+Removing Investments: Users can remove investments with a button that deletes the investment from the list and updates the total value.
+Dynamic Charting:
+Utilizes Chart.js to create a pie chart that dynamically reflects the asset distribution based on the current investments.
+Updates the chart when investments are added, updated, or removed.
+
+<!-- Detailed Code Explanation
+HTML Structure -->
+
+Form: Allows users to input asset details. The required attribute ensures fields are filled before submission.
+Investment List: Dynamically populated with user investments.
+Total Portfolio Value: Displays the sum of all current values of investments.
+Chart Container: Holds a canvas for the pie chart.
+
+Form: Allows users to input asset details. The required attribute ensures fields are filled before submission.
+Investment List: Dynamically populated with user investments.
+Total Portfolio Value: Displays the sum of all current values of investments.
+Chart Container: Holds a canvas for the pie chart.
+Form: Allows users to input asset details. The required attribute ensures fields are filled before submission.
+Investment List: Dynamically populated with user investments.
+Total Portfolio Value: Displays the sum of all current values of investments.
+Chart Container: Holds a canvas for the pie chart.
+
+Form: Allows users to input asset details. The required attribute ensures fields are filled before submission.
+Investment List: Dynamically populated with user investments.
+Total Portfolio Value: Displays the sum of all current values of investments.
+Chart Container: Holds a canvas for the pie chart.
+
+<!-- CSS Styles -->
+
+Styling: Sets a clean, modern look with a light background and rounded elements for better user experience.
+
+<!-- JavaScript Functionality -->
+
+Event Handling: Captures the form submission, prevents the default behavior, and processes input values.
+Investment Object: Each investment is stored as an object within the investments array.
+Dynamic Updates: Functions to update the investment list, total value, and chart after every action.
+
+Event Handling: Captures the form submission, prevents the default behavior, and processes input values.
+Investment Object: Each investment is stored as an object within the investments array.
+Dynamic Updates: Functions to update the investment list, total value, and chart after every action.
+
+<!-- Chart Integration -->
+
+Chart.js Usage: The library is used to create a pie chart, dynamically updating with new data as investments change.
+Random Color Generation: Each segment of the pie chart is given a random color for visual distinction.
+
+<!-- Conclusion -->
+
+The Investment Portfolio Tracker project effectively combines HTML, CSS, and JavaScript to create an interactive and user-friendly application for managing investments. It emphasizes modern web development practices, such as responsive design and dynamic data handling. Users can visualize their investment distribution, making informed decisions based on real-time data.
